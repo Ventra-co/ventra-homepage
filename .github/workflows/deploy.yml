@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm' # yarn을 사용하신다면 'yarn'으로 변경
           
       - name: Install dependencies
         run: npm install # 패키지 설치
