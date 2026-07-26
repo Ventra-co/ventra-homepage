@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #03183d;
+  --color-primary-container: #1b2d53;
+  --color-footer-dark: #0A1221;
+  --color-background-surface: #F8FAFC;
+  --color-border-subtle: #F1F5F9;
+  --color-border-default: #E2E8F0;
+  --color-text-light: #94A3B8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-on-surface-variant: #44464e;
+  --color-on-primary-container: #8495c1;
+  --color-accent: #D97706; /* Muted Orange */
+  
+  --spacing-margin-desktop: 80px;
+  --spacing-gutter: 24px;
+  --spacing-section-gap-mobile: 64px;
+  --spacing-container-max: 1280px;
+  --spacing-margin-tablet: 40px;
+  --spacing-margin-mobile: 20px;
+  --spacing-section-gap-desktop: 96px;
+
+  --font-sans: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+  --font-body-default: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+  --font-caption: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+  --font-eyebrow: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+
+  --font-size-caption: 14px;
+  --font-size-eyebrow: 14px;
+  --font-size-headline-lg-mobile: 48px;
+  --font-size-headline-md-mobile: 30px;
+  --font-size-body-lg: 18px;
+  --font-size-headline-md: 36px;
+  --font-size-body-default: 16px;
+  --font-size-headline-lg: 60px;
+  --font-size-headline-sm: 24px;
+}
+
+html, body, input, button, select, textarea {
+  font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  figcaption,
+  blockquote {
+    text-wrap: pretty;
+  }
+
+  code,
+  kbd,
+  samp {
+    overflow-wrap: anywhere;
+  }
+
+  pre,
+  pre code {
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+}

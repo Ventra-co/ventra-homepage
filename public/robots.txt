@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /insights
+
+Sitemap: https://ventra.co.kr/sitemap.xml

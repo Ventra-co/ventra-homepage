@@ -1,0 +1,8 @@
+{
+  "name": "Remix: VENTRA_HOME Page_v1_Test용",
+  "description": "VENTRA Enterprise Technology Partner",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
