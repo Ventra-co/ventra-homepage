@@ -17,30 +17,31 @@ import { SolutionsSimms } from "./pages/SolutionsSimms";
 export default function App() {
   return (
     <HelmetProvider>
-      <Router>
-      <Routes>
-        <Route path="/" element={<SiteLayout />}>
-          <Route index element={<Home />} />
-          <Route path="business-focus">
-            <Route path="observability-optimization" element={<BusinessFocusObservability />} />
-            <Route path="api-integration" element={<BusinessFocusAPIIntegration />} />
-            <Route path="security-automation" element={<BusinessFocusSecurity />} />
-            <Route path="business-building" element={<BusinessFocusBuilding />} />
+      {/* 아래 Router 태그에 basename 속성을 추가했습니다. */}
+      <Router basename={import.meta.env.BASE_URL}>
+        <Routes>
+          <Route path="/" element={<SiteLayout />}>
+            <Route index element={<Home />} />
+            <Route path="business-focus">
+              <Route path="observability-optimization" element={<BusinessFocusObservability />} />
+              <Route path="api-integration" element={<BusinessFocusAPIIntegration />} />
+              <Route path="security-automation" element={<BusinessFocusSecurity />} />
+              <Route path="business-building" element={<BusinessFocusBuilding />} />
+            </Route>
+            <Route path="solutions">
+              <Route path="jennifer-ai-operations" element={<SolutionsJennifer />} />
+              <Route path="uclm" element={<SolutionsUCLM />} />
+              <Route path="felice-kafka-operations" element={<SolutionsFelice />} />
+              <Route path="simms-itm" element={<SolutionsSimms />} />
+            </Route>
+            <Route 
+              path="insights" 
+              element={INSIGHTS_ENABLED ? <Insights /> : <Navigate to="/" replace />} 
+            />
+            <Route path="about" element={<About />} />
           </Route>
-          <Route path="solutions">
-            <Route path="jennifer-ai-operations" element={<SolutionsJennifer />} />
-            <Route path="uclm" element={<SolutionsUCLM />} />
-            <Route path="felice-kafka-operations" element={<SolutionsFelice />} />
-            <Route path="simms-itm" element={<SolutionsSimms />} />
-          </Route>
-          <Route 
-            path="insights" 
-            element={INSIGHTS_ENABLED ? <Insights /> : <Navigate to="/" replace />} 
-          />
-          <Route path="about" element={<About />} />
-        </Route>
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
     </HelmetProvider>
   );
 }
