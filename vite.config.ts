@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     // GitHub Pages 배포를 위한 base 경로 설정 추가
-    base: '/ventra/', // <-- '레포지토리이름'을 실제 영문 레포지토리명으로 변경하세요.
+    base: '/ventra-homepage/', // <-- '레포지토리이름'을 실제 영문 레포지토리명으로 변경하세요.
     
     plugins: [react(), tailwindcss()],
     resolve: {
