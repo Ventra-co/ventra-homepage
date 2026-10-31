@@ -20,8 +20,6 @@ import rockplaceLogo from "../../about__s6-partner-logos-Rockplace.png";
 import simmssoftLogo from "../../about__s6-partner-logos-simmssoft.png";
 import spithaLogo from "../../about__s6-partner-logos-SPitha.png";
 import universalRealtimeLogo from "../../about__s6-partner-logos-UniversalRealtime.png";
-import ibmLogo from "../../about__s6-partner-logos-IBM.png";
-import cudoLogo from "../../about__s6-partner-logos-CUDO.png";
 import aboutHeroBg from "../../about__s1-hero-bgv2.png";
 import experienceVisual from "../../about__s4-experience-visual-v2.png";
 import { SeoMeta } from "../components/seo/SeoMeta";
@@ -308,12 +306,6 @@ export function About() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-            <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[16px] p-8 h-[120px] md:h-[140px] flex items-center justify-center">
-              <img src={ibmLogo} alt="IBM" className="w-[72%] md:w-[76%] h-auto max-h-full object-contain" />
-            </div>
-            <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[16px] p-8 h-[120px] md:h-[140px] flex items-center justify-center">
-              <img src={cudoLogo} alt="CUDO Communication" className="w-[80%] md:w-[85%] h-auto max-h-full object-contain" />
-            </div>
             <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[16px] p-8 h-[120px] md:h-[140px] flex items-center justify-center">
               <img src={goldenearthLogo} alt="골든어스" className="w-[72%] md:w-[76%] h-auto max-h-full object-contain" />
             </div>

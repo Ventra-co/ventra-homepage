@@ -9,16 +9,12 @@ import logoRockplace from "../../about__s6-partner-logos-Rockplace.png";
 import logoSimmssoft from "../../about__s6-partner-logos-simmssoft.png";
 import logoSPitha from "../../about__s6-partner-logos-SPitha.png";
 import logoUniversalRealtime from "../../about__s6-partner-logos-UniversalRealtime.png";
-import logoIBM from "../../about__s6-partner-logos-IBM.png";
-import logoCUDO from "../../about__s6-partner-logos-CUDO.png";
 import { SeoMeta } from "../components/seo/SeoMeta";
 
 import { Helmet } from "react-helmet-async";
 export function Home() {
   
 const partners = [
-  { name: 'IBM', src: logoIBM, size: 'scale-90' },
-  { name: 'CUDO', src: logoCUDO, size: 'scale-100' },
   { name: 'DISCO', src: logoDISCO, size: 'scale-110' },
   { name: 'Goldenearth', src: logoGoldenearth, size: 'scale-90' },
   { name: 'JENNIFERSOFT', src: logoJENNIFERSOFT, size: 'scale-100' },
